@@ -1,0 +1,22 @@
+/* Loaded only by the necklace page. The homepage stylesheet stays unchanged. */
+.necklace-page { padding-top: 28px; }
+.back-link { margin-bottom: 32px; }
+.necklace-heading { margin-bottom: 36px; }
+.necklace-heading .eyebrow { color: var(--maroon); }
+.necklace-heading h1 { font-size: clamp(38px, 4.1vw, 72px); letter-spacing: -1.7px; margin-bottom: 0; }
+.necklace-grid { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 48px 32px; }
+.necklace { min-width: 0; width: 88%; }
+.necklace-image { aspect-ratio: 4/5; background: var(--ivory); }
+.necklace-image img { width: 100%; height: 100%; object-fit: contain; }
+.necklace-controls:not([hidden]) { display: flex; align-items: center; justify-content: center; gap: 22px; padding: 10px 0; }
+.necklace-controls button { min-width: 44px; min-height: 44px; border: 0; background: transparent; color: var(--maroon); font-size: 23px; cursor: pointer; }
+.necklace-position { font-size: 11px; letter-spacing: 2px; color: var(--muted); }
+.necklace h2 { font-size: 28px; letter-spacing: 0; margin-top: 12px; }
+.necklace > p { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
+@media (min-width: 721px) {
+  .necklace-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .necklace { width: 100%; max-width: 320px; }
+}
+@media (min-width: 1024px) {
+  .necklace-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
