@@ -239,3 +239,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-
   border-radius: 2px;
   pointer-events: none;
 }
+
+/* Contained logo in the existing Our Story two-column section. */
+#our-story .editorial-logo { display: flex; align-items: center; justify-content: center; padding: 48px 0; }
+#our-story .editorial-logo img { position: static; width: 75%; max-width: 360px; height: auto; object-fit: contain; object-position: center; }
+
+@media (min-width: 721px) {
+  #our-story .editorial-logo img { max-width: none; }
+}
